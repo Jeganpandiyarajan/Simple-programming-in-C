@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+    int a,b,v;
+    char O;
+    printf("Enter a value = ");
+    scanf("%d",&a);
+    printf("Enter a value = ");
+    scanf("%d",&b);
+    printf("If yo want to perform the operation (ADD click A, MUL click M, SUB click S, DIV click D)? = ");
+    scanf(" %c",&O);
+    if(O =='+'){
+        v=a+b;
+        printf("The addition value = %d", v);
+    }
+    else if(O=='-'){
+        v=a-b;
+        printf("The subration value = %d",v);
+    }
+    else if(O=='*'){
+        v=a*b;
+        printf("The multiplication value = %d",v);
+    }
+    else if(O=='/'){
+        v=a/b;
+        printf("The division value = %d",v);
+    }
+    else{
+        printf("\nSomething went wrong");
+    }
+    getchar();
+    return 0;
+}
