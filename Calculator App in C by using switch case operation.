@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include<conio.h>
+int main(){
+   int a,b,v;
+   char op;
+   printf("enter the value of a= ");
+   scanf("%d",&a);
+   printf("enter the value of b= ");
+   scanf("%d",&b);
+   printf("Enter the operation to be performed= ");
+   scanf(" %c",&op);
+   switch (op)
+   {
+       case '+':
+       v=a+b;
+       printf("ADDITION PERFORMED = %d",v);
+       break;
+       
+       
+       case '-':
+       v=a-b;
+       printf("SUBRACTION PERFORMEF = %d",v);
+       break; 
+       
+       case '*':
+       v=a*b;
+       printf("MULTIPLICATION PERFORMED = %d",v);
+       break;
+       
+       case '/':
+       v=a/b;
+       printf("DIVISION PERFORMED = %d",v);
+       break;
+       
+       default:
+       printf("invalide operation");
+       
+   }
+   getchar();
+   return 0;
+   
+}
