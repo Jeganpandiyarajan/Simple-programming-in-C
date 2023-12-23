@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{   int i;
+    char opr,A;
+    printf("enter the char : ");
+    scanf(" %c",&opr);
+    switch(opr=='A'){
+        case 1:
+         for(i=0;i<=10;i++){
+         printf("%d",i);
+        }
+        break;
+        default:
+        printf("sorry.......");
+    }
+    return 0;
+    getchar();
+}
