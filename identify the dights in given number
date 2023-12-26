@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main(){
+    int n,copy,digit=0,sum=0;
+    printf("Enter the number : ");
+    scanf("%d",&n);
+    copy =n;
+    while(copy >0){
+        copy=copy/10;
+        digit++;
+    }
+    printf("%d",digit);
+}
