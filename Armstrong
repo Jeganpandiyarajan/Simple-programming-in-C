@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int main(){
+    int n,copy,x,y,digit=0,sum=0;
+    printf("Enter the number : ");
+    scanf("%d",&n);
+    copy = n;
+    while(copy > 0){
+        copy=copy/10;
+        digit++;
+    }
+    copy = n; 
+    while(copy>0){
+        x=copy%10;
+        sum+=pow(x,digit);
+        copy=copy/10;
+    }
+    copy=n;
+    if(sum==copy){
+        printf("its an Armstrong number ");
+    }
+    else{
+        printf("its not an Armstrong");
+    }
+}
+
+
+
+
