@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+    int rev=0,n,copy;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    copy=n;
+    while(copy>0){
+        rev*=10;
+        rev+=(copy%10);
+        copy/=10;
+    }
+    copy=n;
+    if(n==rev){
+        printf("Its palindrome");
+    }
+    else {
+        printf("Its not a palindrome");
+    }
+}
