@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+    int n,copy,rev=0;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    copy=n;
+    while(copy>0){
+        rev*=10;
+        rev+=(copy%10);
+        copy/=10;
+    }
+    copy=n;
+    printf("revers of a given number is : %d",rev);
+    getchar();
+    return 0;
+}
