@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+    int n ,mark[50],sum,i;
+    float avg;
+    printf("Enter the total number of subjects  : ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        printf("Enter the marks  : ");
+        scanf("%d",&mark[i]);
+    }
+    printf("\nThe mark stored is : ");
+    for(i=1;i<=n;i++){
+        printf(" \nMarks is  : %d",mark[i]);
+        sum=sum+(mark[i]);
+    }
+    avg=sum/n;
+    printf("\nThe total mark secured is : %d",sum);
+    printf("\nThe Average secured is : %f",avg);
+    
+}
