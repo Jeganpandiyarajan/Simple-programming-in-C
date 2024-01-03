@@ -2,7 +2,7 @@
 #include<conio.h>
 int main(){
     int i,j,arr[2][2];
-    printf("\tENTER THE ELEMENT TO BE STORED IN THE 2D ARRAY");
+    printf("\tENTER THE ELEMENT TO BE STORED IN THE 2D ARRAYS");
     for(i=0;i<2;i++){
         for(j=0;j<2;j++){
             printf("\nEnter the number of : rows : %d columns : %d = ",i,j);
