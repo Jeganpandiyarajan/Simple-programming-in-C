@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+int add(){
+    int a,b,c;
+    printf("The value of a: ");
+    scanf("%d",&a);
+    printf("The value of b: ");
+    scanf("%d",&b);
+    c=a+b;
+    return c;
+}
+int main(){
+    printf("The value is : %d ",add());
+    return 0;
+}
