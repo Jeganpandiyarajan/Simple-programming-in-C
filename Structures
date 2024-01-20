@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct book{
+   int No;
+   char Author[50];
+   float price;
+};
+int main(){
+    struct book harrypoter;
+    harrypoter.No=45;
+    harrypoter.price=550.34;
+    strcpy(harrypoter.Author,"JK Rowling");
+    printf("The book number : %d\n",harrypoter.No);
+    printf("The book name: %s\n",harrypoter.Author);
+    printf("The book price: %f\n",harrypoter.price);
+    
+    struct book percyjackson;
+    percyjackson.No=46;
+    percyjackson.price=750.34;
+    strcpy(percyjackson.Author,"Rick Riordan");
+    printf("\nThe book number : %d\n",percyjackson.No);
+    printf("The book name: %s\n",percyjackson.Author);
+    printf("The book price: %f\n",percyjackson.price);
+    return 0;
+    
+}
